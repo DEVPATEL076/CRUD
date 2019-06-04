@@ -1,0 +1,11 @@
+<h1>These are some of my books:</h1>
+
+<ul>
+{% for book in object_list %}
+    <li>{{ book }}</li>
+    <a href="{% url 'bookdelete' book.id %}">Delete</a>
+    <a href="{% url 'bookupdate' book.id %}">Update</a>
+{% empty %}
+    <li>No books yet.</li>
+{% endfor %}
+</ul>

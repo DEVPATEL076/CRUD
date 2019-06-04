@@ -1,0 +1,38 @@
+<h1>Welcome!!</h1>
+
+<p>This is my library</p>
+<p>What do you think about it?</p>
+<table>
+	<tr>
+		<td>
+			<h2>Class Base</h2>
+			<ul>
+				<li>Author</li>
+				<li><a href="{% url 'Author' %}">Author List</a></li>
+				<li><a href="{% url 'authorcreate' %}">Author create</a></li>
+				
+			</ul>
+			<ul>
+				<li>Book</li>
+				<li><a href="{% url 'Book' %}">Book List</a></li>
+				<li><a href="{% url 'bookcreate' %}">Book Create</a></li>
+				
+			</ul>
+		</td>
+		<td>
+			<h2>Method Base</h2>
+			<ul>
+				<li>Author</li>
+				<li><a href="{% url 'mauthor' %}">Author List</a></li>
+				<li><a href="{% url 'mauthorcreate' %}">Author create</a></li>
+				
+			</ul>
+			<ul>
+				<li>Book</li>
+				<li><a href="{% url 'mbook' %}">Book List</a></li>
+				<li><a href="{% url 'mbookcreate' %}">Book Create</a></li>
+				
+			</ul>
+		</td>
+	</tr>
+</table>

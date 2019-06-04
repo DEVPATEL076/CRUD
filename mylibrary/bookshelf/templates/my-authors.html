@@ -1,0 +1,11 @@
+<h1>These are some of my authors:</h1>
+
+<ul>
+{% for author in object_list %}
+    <li>{{ author }}</li>
+    <a href="{% url 'authordelete' author.id %}">Delete</a>
+    <a href="{% url 'authorupdate' author.id %}">update</a>
+{% empty %}
+    <li>No author yet.</li>
+{% endfor %}
+</ul>
